@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    color: white;
+    background-color: #08070B;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    max-width: 87.5rem;
+    height: 100%;
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+::selection {
+    color: wheat;
+}
+
+a:hover {
+    color: red !important;
+}
+
+.intro {
+    display: flex;
+    gap: min(15vh, 10rem);
+    flex-direction: column;
+}
+
+.code {
+    color: white;
+    justify-self: center;
+    font-size: 14rem;
+    font-size: clamp(14rem, -5.45rem + 31.37vw, 22rem);
+    font-family: "Architects Daughter", cursive;
+    transform: rotate(-15deg);
+    transition: all 500ms ease-in-out;
+    text-decoration: none;
+}
+
+.code:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+h1.title {
+    color: #F2F2F2;
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 1.3rem + 5.95vw, 5rem);
+    font-weight: bold;
+    font-family: "Almendra", serif;
+    transition: all 200ms ease-in-out;
+}
+
+p.subtitle {
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.65rem + 2.98vw, 2.5rem);
+    font-family: "Architects Daughter", cursive;
+    transition: all 200ms ease-in-out;
+}
+
+a.company {
+    color: #9c63e5;
+}
+
+a.company:active {
+    color: #28a97b;
+}
+
+.links {
+    display: flex;
+    gap: 0.5rem;
+    font-size: clamp(0.5rem, 0.26rem + 1.19vw, 1rem);
+    flex-direction: column;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    font-size: clamp(0.5rem, 0.26rem + 1.19vw, 1rem);
+    align-items: center;
+}
+
+.icon {
+    width: 1.5rem;
+    width: clamp(1.25rem, 0.65rem + 2.98vw, 2.5rem);
+    height: 1.25rem;
+    height: clamp(1.25rem, 0.65rem + 2.98vw, 2.5rem);
+    transition: all 200ms ease-in-out;
+}
+
+a.social-link:hover .icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+@media (max-width: 992px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .code {
+        display: none;
+    }
+}
