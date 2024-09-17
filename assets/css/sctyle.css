@@ -60,18 +60,19 @@ h1.title {
     transition: all 200ms ease-in-out;
 }
 
-p.subtitle {
+p.subtitle,
+p.learnings {
     font-size: 1.25rem;
     font-size: clamp(1.25rem, 0.65rem + 2.98vw, 2.5rem);
     font-family: "Architects Daughter", cursive;
     transition: all 200ms ease-in-out;
 }
 
-a.company {
+a.highlight {
     color: #9c63e5;
 }
 
-a.company:active {
+a.highlight:active {
     color: #28a97b;
 }
 
